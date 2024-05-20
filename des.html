@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <title>Menu</title>
+</head>
+<body class="container">
+    <div class="btn-up btn-up_hide"></div>
+    <script src="script.js"></script>
+    <header class="menu-wrap">
+        <div class="logo">
+            <a href="homepage.html"><img src="img/zerna.svg" alt="Travel agency"></a>
+        </div>
+       
+        <input class="toggler" id="eCheck" type="checkbox">
+        
+        <div class="hamburger">
+            <div>
+            </div>
+        </div>
+
+        <nav class="menu-nav">
+            <div>
+                <div>
+                    <ul>
+                        <li><a href="aboutus.html">О нас</a></li>
+                        <li><a href="adress.html">Адреса</a></li>
+                        <li><a href="menu.html" >Меню</a></li>
+                        <li><a href="promotions.html">Акции</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <h1 class="us"><a href="menu.html">Главная/ Меню/ Десерты</a></h1>
+    <h1 class="Menu">Меню</h1>
+    <h1 class="desserts">Десерты</h1>
+    <div class="sorting-buttons">
+        <button onclick="sortByPriceDescending()">От дорогих к дешевым</button>
+        <button onclick="sortByPriceAscending()">От дешевых к дорогим</button>
+        <button onclick="resetSort()">Сбросить сортировку</button>
+        </div>
+    <div class="div">
+    <p>
+    <figure>
+        <img class = "images" src="img/mars.png" alt="" onclick="showOrderForm('img/mars.png', 0 ,'Марс', 'Такой же тёмный и таинственный, загадочный и прекрасный...Для любителей шоколада и варёной сгущенки. Неземная диетическая радость! Ведь наш потрясающий торт Марс обладает не только великолепным сочным очень шоколадным вкусным бисквитом, но и огромным количеством крема Вареная сгущенка. Этот торт позволит забыть обо всех запретах на диете! ')">
+        <p class="podpic">Марс кг</p><p class="podpic">24,99 byn</p>
+        <div class="modalnum"> 
+        </div>
+    </figure>
+
+    <figure>
+        <img class = "images" src="img/napoleon.png"  alt="" onclick="showOrderForm('img/napoleon.png', 1 , 'Наполеон',  'Наполеон торт - изысканное десертное произведение, состоящее из тонких слоев хрустящего слоеного теста, пропитанных нежным кремом. Его неповторимый вкус и элегантное оформление делают его незабываемым угощением для ценителей сладостей.')">
+        <p class="podpic">Наполеон кг</p><p class="podpic">19,99 byn</p>
+        <div class="modalnum"> 
+        </div>
+        <!-- <div class="modal" id="order-modal"> 
+            <div class="modal-content">
+                <div class="gallery">          
+                    <div class="img"> 
+                      <img src="photo/.jpg" alt="Image 3"> 
+                      <div class="caption"> 
+                        <p>Заголовок</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nostrum magni et dolorem labore maxime quo ut consequatur perspiciatis voluptatum corrupti quas veritatis, inventore sit molestiae aliquam quidem, alias architecto ullam aut voluptas quia rerum quisquam enim. Odit in beatae eius accusantium, doloribus deleniti quae nisi atque excepturi culpa quibusdam.</p>
+                      </div>
+                    </div>
+                </div> 
+            </div>
+        </div> -->
+    </figure>
+
+    <figure>
+        <img class = "images" src="img/stokgolm.png" alt="" onclick="showOrderForm('img/stokgolm.png', 2 , 'Стокгольм', 'Чизкейк Стокгольм - это искусное сочетание нежного крема из сыра, дополненного нотками ванили и лимона, на хрустящем орео-печенье. Его неповторимый вкус и аппетитный внешний вид подарят вам настоящее удовольствие и заставят вас влюбиться в каждый его кусочек.' )">
+        <p class="podpic">Стокгольм кг</p><p class="podpic">24,99 byn</p>
+        <div class="modalnum"> 
+        </div>
+    </figure>
+</p>
+
+<p>
+    <figure>
+        <img class = "images" src="img/newyork.png" alt="" onclick="showOrderForm('img/newyork.png', 3 , 'Нью-Йорк', 'Чизкейк Нью-Йорк - это классическое воплощение американского вкуса: нежный сырный крем на песочной основе, сочетающийся с нотками ванили и лимона. Его пышная текстура и богатый вкус перенесут вас прямиком в сердце Нью-Йорка, оставляя незабываемый вкусовой опыт.' )">
+        <p class="podpic">Нью-Йорк кг</p><p class="podpic">22,99 byn</p>
+        <div class="modalnum"> 
+        </div>
+    </figure>
+
+    <figure>
+        <img class = "images" src="img/pannakotta.png"  alt="" onclick="showOrderForm('img/pannakotta.png', 4 , 'Панна Котта',  'Пирожное Панна котта - это изысканное итальянское угощение, состоящее из нежного слоя сливочного крема, подается с ароматным фруктовым или ягодным соусом. Его нежная текстура и исключительно нежный вкус сделают ваше десертное время по-настоящему особенным.')">
+        <p class="podpic">Панна Котта 120г</p><p class="podpic">3,19 byn</p>
+        <div class="modalnum"> 
+        </div>
+    </figure>
+
+    <figure>
+        <img class = "images" src="img/macarons.png"  alt="" onclick="showOrderForm('img/macarons.png',  5 , 'Набор пирожных',  'Макаронс - это утонченное французское пирожное, состоящее из двух воздушных бисквитных пластов, соединенных нежным кремом. Этот десерт порадует вас разнообразием вкусов и цветов: от классических вариантов с шоколадом и ванилью до ярких фруктовых и ягодных композиций.')">
+        <p class="podpic">Набор пирожных макарон 7шт. 150г</p><p class="podpic">12,99 byn</p>
+        <div class="modalnum"> 
+        </div>
+    </figure>
+</p>
+
+<p>
+    <figure>
+        <img class = "images" src="img/3chocolate.png"  alt="" onclick="showOrderForm('img/3chocolate.png',  6 , 'Три шоколада', 'Пирожное Три шоколада - это искусное сочетание трех видов шоколада: нежного молочного, горького и белого, образующих гармоничные слои в этом десерте. Его богатый шоколадный вкус и роскошная текстура удовлетворят даже самых взыскательных гурманов, оставляя приятное послевкусие и желание еще.' )">
+        <p class="podpic">Три шоколада 1шт. 110г</p><p class="podpic">3,49 byn</p>
+        <div class="modalnum"> 
+        </div>
+    </figure>
+
+    <figure>
+        <img class = "images" src="img/heart.png" alt="" onclick="showOrderForm('img/heart.png',  7 , 'Кокос-банан-маракуйя', 'Пирожное Кокос-банан-маракуйя - это экзотическое угощение, в котором сочетаются сладость банана, нежность кокоса и яркость маракуйи. Насыщенный вкус, сладкая ароматика и сочные текстуры делают это десертное трио незабываемым источником восторга для ваших вкусовых рецепторов.' )">
+        <p class="podpic">Кокос-банан-маракуйя 1 шт. 80г</p><p class="podpic">2,69 byn</p> 
+        <div class="modalnum"> 
+        </div>
+    </figure>
+
+    <figure>
+        <img class = "images" src="img/pavlov.png" alt="" onclick="showOrderForm('img/pavlov.png',  8 , 'Десерт Павлова', 'Десерт Павлова - это нежное сочетание хрустящей внешности и мягкости внутри. Он состоит из хрустящего белкового коржа, обволакивающего мягкий центр из воздушного взбитого сливочного крема, увенчанного свежими фруктами или ягодами. В каждом кусочке этого десерта звучит нота роскоши и наслаждения.')">
+        <p class="podpic">Десерт Павлова 1 шт. 60г</p><p class="podpic">2,69 byn</p>
+        <div class="modalnum"> 
+        </div>
+    </figure>
+</p>
+
+<p>
+    <figure>
+        <img class = "images" src="img/eklermarakuya.png" alt="" onclick="showOrderForm('img/eklermarakuya.png',  9 , 'Эклер Маракуйя', 'Эклер Маракуйя - это изысканное сочетание нежного бисквитного теста, наполненного свежим кремом с нотками ароматной маракуйи. Его легкая текстура и яркий вкус придают этому десерту особый шарм, заставляя вас наслаждаться каждым его кусочком.' )">
+        <p class="podpic">Эклер Маракуйя 1 шт. 60г</p><p class="podpic">2,69 byn</p>
+        <div class="modalnum"> 
+        </div>
+    </figure>
+
+    <figure>
+        <img class = "images" src="img/eklervanilla.png" alt="" onclick="showOrderForm('img/eklervanilla.png',  10 , 'Эклер Ваниль', 'Эклер Ваниль - это классическое угощение, в котором сочетаются нежный бисквитный пирожное, наполненное ароматным ванильным кремом. Его нежная текстура и неповторимый вкус ванили создают идеальное сочетание для любителей классических десертов.' )">
+        <p class="podpic">Эклер Ваниль 1 шт. 60г</p><p class="podpic">2,69 byn</p>
+        <div class="modalnum"> 
+        </div>
+    </figure>
+
+    <figure>
+        <img class = "images" src="img/baunti.png" alt="" onclick="showOrderForm('img/baunti.png',  11 , 'Баунти', 'Пирожное Баунти - это нежный кокосовый крем, обволакивающий ароматные шарики, наполненные сладкими кусочками шоколада. Его экзотический вкус и неповторимая текстура сделают ваш десертный опыт насыщенным и незабываемым.')">
+        <p class="podpic">Баунти 100г</p><p class="podpic">3,99 byn</p>
+        <div class="modalnum"> 
+        </div>
+    </figure>
+</p>
+    <figure>
+        <img class = "images" src="img/rulet.png"  alt="" onclick="showOrderForm('img/rulet.png',  12 , 'Рулет лимонный', 'Лимонный рулет - это легкий и освежающий десерт, состоящий из воздушного бисквитного рулета, нежно пропитанного лимонным сиропом и начиненного кремом на основе свежего лимонного сока и нежной сливочной массы. Его яркий цитрусовый вкус и легкая текстура создают идеальное сочетание для тех, кто ценит свежесть и нежность в каждом кусочке.' )">
+        <p class="podpic">Рулет лимонный кг</p><p class="podpic">22,99 byn</p>
+        <div class="modalnum"> 
+        </div>
+    </figure>
+
+    <figure>
+        <img class = "images" src="img/mereng.png"  alt="" onclick="showOrderForm('img/mereng.png',  13 , 'Меренговый рулет',  'Меренговый рулет - это изысканный десерт, в котором сочетаются нежный бисквитный рулет и воздушный меренг. Нежный и хрустящий вкус меренга прекрасно сочетается с мягким бисквитом, создавая неповторимую текстуру и незабываемый вкус. Каждый укус этого рулета наполнен нежностью и восторгом.')">
+        <p class="podpic">Меренговый рулет кг</p><p class="podpic">22,99 byn</p>
+        <div class="modalnum"> 
+        </div>
+    </figure>
+
+</div>
+
+<footer id="cont">
+    <div class="half2">
+        <p>Главный офис: Минск, ул.Платонова 1Б<br>+375 (29) 612-27-82 <br>Поставщикам: coffee1000@gmail.com<br>© «1000&7 Coffee» 2024. Все права защищены.</p> 
+      </div>    
+</footer>
+    
+</body>
+<script src="forGallery.js"></script>
+<script src ="sort.js"></script>
+</html>

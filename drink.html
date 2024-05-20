@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <title>Menu</title>
+</head>
+<body class="container">
+    <div class="btn-up btn-up_hide"></div>
+    <script src="script.js"></script>
+    <header class="menu-wrap">
+        <div class="logo">
+            <a href="homepage.html"><img src="img/zerna.svg" alt="Travel agency"></a>
+        </div>
+       
+        <input class="toggler" id="eCheck" type="checkbox">
+        
+        <div class="hamburger">
+            <div>
+            </div>
+        </div>
+
+        <nav class="menu-nav">
+            <div>
+                <div>
+                    <ul>
+                        <li><a href="aboutus.html">О нас</a></li>
+                        <li><a href="adress.html">Адреса</a></li>
+                        <li><a href="menu.html" >Меню</a></li>
+                        <li><a href="promotions.html">Акции</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <h1 class="us"><a href="menu.html">Главная/ Меню/ Напитки</a></h1>
+    <h1 class="Menu">Меню</h1>
+    <h1 class="desserts">Напитки</h1>
+    <div class="sorting-buttons">
+        <button onclick="sortByPriceDescending()">От дорогих к дешевым</button>
+        <button onclick="sortByPriceAscending()">От дешевых к дорогим</button>
+        <button onclick="resetSort()">Сбросить сортировку</button>
+        </div>
+    <div class="div">
+    <p>
+    <figure>
+        <img class = "images" src="img/americano.png" alt="" onclick="showOrderForm('img/americano.png', 0 ,'Американо', 'Американо - классический чёрный кофе с насыщенным вкусом и ароматом. Идеальный выбор для тех, кто ценит простоту и качество.')">
+        <p class="podpic">5 byn</p>
+        <div class="modalnum"> 
+        </div>
+    </figure>
+
+    <figure>
+        <img class = "images" src="img/kapuchino.png"  alt="" onclick="showOrderForm('img/kapuchino.png', 1 , 'Капучино',  'Капучино - нежный кофейный напиток с бархатистым молочным взбитым муссом. Он прекрасно подходит для любителей кофе с мягким и насыщенным вкусом, идеальный выбор для утреннего наслаждения.')">
+        <p class="podpic">5/6 byn</p>
+        <div class="modalnum"> 
+        </div>
+        <!-- <div class="modal" id="order-modal"> 
+            <div class="modal-content">
+                <div class="gallery">          
+                    <div class="img"> 
+                      <img src="photo/.jpg" alt="Image 3"> 
+                      <div class="caption"> 
+                        <p>Заголовок</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nostrum magni et dolorem labore maxime quo ut consequatur perspiciatis voluptatum corrupti quas veritatis, inventore sit molestiae aliquam quidem, alias architecto ullam aut voluptas quia rerum quisquam enim. Odit in beatae eius accusantium, doloribus deleniti quae nisi atque excepturi culpa quibusdam.</p>
+                      </div>
+                    </div>
+                </div> 
+            </div>
+        </div> -->
+    </figure>
+
+    <figure>
+        <img class = "images" src="img/flat yait.png" alt="" onclick="showOrderForm('img/flat yait.png', 2 , 'Флэт Уайт', 'Это кофейный напиток, который представляет собой комбинацию эспрессо с молоком, обычно с более мягкой текстурой молочной пены, чем в латте. Он отличается насыщенным вкусом кофе и гладкой, кремовой текстурой, что делает его популярным выбором среди ценителей кофейных напитков.' )">
+        <p class="podpic">6 byn</p>
+        <div class="modalnum"> 
+        </div>
+    </figure>
+</p>
+
+<p>
+    <figure>
+        <img class = "images" src="img/raf.png" alt="" onclick="showOrderForm('img/raf.png', 3 , 'Раф', 'Это кофейный напиток, основанный на эспрессо, который обычно смешивается с сливками или молоком. Он часто ассоциируется с богатым и кремовым вкусом, благодаря добавленным ингредиентам. Раф - отличный выбор для любителей кофе, которые предпочитают более нежные и насыщенные вкусы.' )">
+        <p class="podpic">7 byn</p>
+        <div class="modalnum"> 
+        </div>
+    </figure>
+
+    <figure>
+        <img class = "images" src="img/espresso.png"  alt="" onclick="showOrderForm('img/espresso.png', 4 , 'Эспрессо',  'Эспрессо - это короткий и интенсивный кофейный напиток, приготовленный путем пропускания горячей воды под высоким давлением через молотые кофейные зерна. Он обладает насыщенным вкусом и ароматом, идеальным для ценителей кофе, которые предпочитают сильный и выразительный напиток.')">
+        <p class="podpic">5 byn</p>
+        <div class="modalnum"> 
+        </div>
+    </figure>
+
+    <figure>
+        <img class = "images" src="img/latte.png"  alt="" onclick="showOrderForm('img/latte.png',  5 , 'Латте',  'Латте - это кофейный напиток, состоящий из эспрессо и горячего молока, обычно подаваемый с молочной пенкой сверху. Он отличается нежным вкусом и мягким ароматом, что делает его идеальным выбором для любителей более мягких и кремовых кофейных напитков.')">
+        <p class="podpic">6 byn</p>
+        <div class="modalnum"> 
+        </div>
+    </figure>
+</p>
+
+<p>
+    <figure>
+        <img class = "images" src="img/tea.png"  alt="" onclick="showOrderForm('img/tea.png',  6 , 'Чай', 'Чай - это ароматный и традиционный напиток, приготавливаемый путем заваривания сушеных листьев чайного куста в горячей воде. Он отличается разнообразными вкусами и ароматами в зависимости от сорта и способа приготовления, что делает его популярным напитком во многих культурах и странах мира.' )">
+        <p class="podpic">5 byn</p>
+        <div class="modalnum"> 
+        </div>
+    </figure>
+
+    <figure>
+        <img class = "images" src="img/grtea.png" alt="" onclick="showOrderForm('img/grtea.png',  7 , 'Гречишный чай', 'Гречишный чай - это натуральный и полезный напиток, который готовят из семян гречихи. Он обладает приятным ореховым вкусом с легкой горчинкой и ароматом, который напоминает травяные нотки. Богатый витаминами и минералами состав делает его отличным выбором для любителей здорового образа жизни и натуральных напитков.' )">
+        <p class="podpic">6 byn</p> 
+        <div class="modalnum"> 
+        </div>
+    </figure>
+
+    <figure>
+        <img class = "images" src="img/kakao.png" alt="" onclick="showOrderForm('img/kakao.png',  8 , 'Какао', 'Какао - это ароматный и насыщенный напиток, приготовленный из натурального какао-порошка и молока. Он обладает богатым шоколадным вкусом с легкой горчинкой и неповторимым ароматом. Горячий шоколадный напиток какао отлично подходит для согревающего утреннего напитка или вечернего уютного угощения перед сном.')">
+        <p class="podpic">5 byn</p>
+        <div class="modalnum"> 
+        </div>
+    </figure>
+</p>
+
+<p>
+    <figure>
+        <img class = "images" src="img/chocolate.png" alt="" onclick="showOrderForm('img/chocolate.png',  9 , 'Горячий шоколад', 'Горячий шоколад - это насыщенный и утонченный напиток, приготовленный из качественного шоколада и молока. Он обладает богатым и глубоким шоколадным вкусом с нежной текстурой. Горячий шоколад идеально подходит для уютного утреннего или вечернего напитка, который согреет вас в холодные дни и подарит ощущение уюта и комфорта.' )">
+        <p class="podpic">6 byn</p>
+        <div class="modalnum"> 
+        </div>
+    </figure>
+
+    <figure>
+        <img class = "images" src="img/fresh.png" alt="" onclick="showOrderForm('img/fresh.png',  10 , 'Апельсиновый фреш', 'Апельсиновый фреш - это освежающий и витаминизированный напиток, приготовленный из свежевыжатого апельсинового сока. Он обладает ярким цитрусовым вкусом с нотками сладости и кислинки. Апельсиновый фреш богат витамином С и отлично тонизирует организм, поднимает настроение и укрепляет иммунитет. Этот напиток идеально подходит для освежения в жаркие дни и как источник энергии и витаминов в любое время дня.' )">
+        <p class="podpic">7 byn</p>
+        <div class="modalnum"> 
+        </div>
+    </figure>
+
+    <figure>
+        <img class = "images" src="img/oblepixa.png" alt="" onclick="showOrderForm('img/oblepixa.png',  11 , 'Облепиховый напиток', 'Облепиховый напиток - это освежающий и ароматный напиток, приготовленный из свежих ягод облепихи. Он обладает ярким вкусом с легкой кислинкой и приятным ароматом, который напоминает летнюю прохладу и свежесть природы. Облепиха богата витаминами и антиоксидантами, поэтому этот напиток не только утоляет жажду, но и благотворно влияет на здоровье вашего организма.')">
+        <p class="podpic">7 byn</p>
+        <div class="modalnum"> 
+        </div>
+    </figure>
+</p>
+<p>
+    <figure>
+        <img class = "images" src="img/klen.png"  alt="" onclick="showOrderForm('img/klen.png',  12 , 'Латте кленовый грильяж', 'Латте с кленовым грильяжем - это изысканный напиток, сочетающий в себе нежность латте и аромат кленового грильяжа. Он обладает неповторимым вкусом сладкого клена, который придает напитку утонченную сладость и аромат. Каждый глоток этого напитка наполняет вас теплом и умиротворением, создавая неповторимый вкусовой опыт.' )">
+        <p class="podpic">9 byn</p>
+        <div class="modalnum"> 
+        </div>
+    </figure>
+
+    <figure>
+        <img class = "images" src="img/malina.png"  alt="" onclick="showOrderForm('img/malina.png',  13 , 'Малиновый раф с карамельными сливками',  'Нежный малиновый раф прекрасно завершает воздушная шапка из взбитых сливок с солёной карамелью.')">
+        <p class="podpic">9 byn</p>
+        <div class="modalnum"> 
+        </div>
+    </figure>
+
+    <figure>
+        <img class = "images" src="img/ice-latte.png"  alt="" onclick="showOrderForm('img/ice-latte.png',  14 , 'Айс-латте',  'Айс латте - это освежающий и прохладный напиток, идеальный для горячих летних дней. Он состоит из эспрессо, смешанного с холодным молоком и льдом, что придает ему особый освежающий вкус и приятную холодящую текстуру. Каждый глоток этого напитка окутывает вас прохладой и бодрит, создавая приятное ощущение свежести.')">
+        <p class="podpic">8 byn</p>
+        <div class="modalnum"> 
+        </div>
+    </figure>
+</p>
+<p>
+    <figure>
+        <img class = "images" src="img/bambl.png"  alt="" onclick="showOrderForm('img/bambl.png',  15 , 'Бамбл',  'Бамбл - это ароматный и освежающий напиток, приготовленный на основе натуральных ингредиентов и сочетающий в себе богатый вкус и нежную текстуру. Он состоит из специального соуса из свежих ягод, добавленного к холодному чаю и льду, что придает ему особый вкусовой оттенок и приятную прохладу. Каждый глоток напитка бамбл наполняет вас свежестью и энергией, даря приятное настроение на весь день.')">
+        <p class="podpic">8 byn</p>
+        <div class="modalnum"> 
+        </div>
+    </figure>
+
+    <figure>
+        <img class = "images" src="img/orange.png"  alt="" onclick="showOrderForm('img/orange.png',  16 , 'Латте бразильский апельсин',  'Основа из эспрессо на бразильской арабике и сливочного латте с блю кюрасао отлично дополняется нежнейшей цитрусово-банановой пенкой.')">
+        <p class="podpic">9 byn</p>
+        <div class="modalnum"> 
+        </div>
+    </figure>
+
+    <figure>
+        <img class = "images" src="img/matcha.png"  alt="" onclick="showOrderForm('img/matcha.png',  17 , 'Матча персик-земляника',  'Тонизирующий напиток на основе матча, натурального персикового сока и пюре земляники. Сочетание ингредиентов дает новые неожиданные вкусы, каждый найдет в нем для себя свой весенний фрукт. Может подаваться в холодном варианте.')">
+        <p class="podpic">8 byn</p>
+        <div class="modalnum"> 
+        </div>
+    </figure>
+</p>
+<figure>
+    <img class = "images" src="img/milk.png"  alt="" onclick="showOrderForm('img/milk.png',  18 , 'Милкшейк с пудингом',  'Неожиданные сочетания структур и вкусов создают настоящий фейерверк. Шоколадный пудинг с кремчизом, манговые сливки и шоколадные шарики позволят взглянуть по-новому на не кофейный напиток.')">
+    <p class="podpic">9 byn</p>
+    <div class="modalnum"> 
+    </div>
+</figure>
+
+</div>
+
+<footer id="cont">
+    <div class="half2">
+        <p>Главный офис: Минск, ул.Платонова 1Б<br>+375 (29) 612-27-82 <br>Поставщикам: coffee1000@gmail.com<br>© «1000&7 Coffee» 2024. Все права защищены.</p> 
+      </div>    
+</footer>
+    
+</body>
+<script src="forGallery.js"></script>
+<script src="sortd.js"></script>
+</html>

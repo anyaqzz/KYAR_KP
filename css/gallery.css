@@ -1,0 +1,208 @@
+* {
+    font-family: 'Ink free';
+  }
+  
+  @font-face {
+    font-family: 'Ink free';
+    src:url('font/inkfree.woff')format('woff');
+    src:url('font/inkfree.svg')format('svg');
+     }
+  .hidden {
+    display: none;
+  }
+.btn-up {
+    position: fixed;
+    background-color: #4c2f27;
+    right: 20px;
+    bottom: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 50px;
+    }
+    .btn-up::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/%3E%3C/svg%3E");
+    }
+    .btn-up_hide {
+    display: none;
+    }
+    @media (hover: hover) and (pointer: fine) {
+    .btn-up:hover {
+      background-color: #413433;
+    }
+    }
+    a{
+    text-decoration: none;
+    color: black;
+    }
+     button{
+      margin-left: 5%;
+      margin-top: 7%;
+     }
+     
+  .show {display:block;}
+  .us{
+    font-family: 'Ink free';
+  font-size: 35px;
+  margin-top: 55px;
+  margin-left: 65px;
+  }
+  .Menu{
+    font-family: 'Ink free';
+    font-size: 55px;
+    text-align: center;
+    }
+    .desserts{
+    font-family: 'Ink free';
+    font-size: 40px;
+    text-align: left;
+    margin-left: 65px;
+    }
+
+  .caption {
+    text-align: center;
+    margin: 100px auto;
+    color: white;
+  }
+  .podpic{
+    font-family: 'Ink free';
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  .div {
+    margin-left: 50px;
+  }
+  
+  .images {
+    width: 395px;
+    height: 395px;
+  }
+  
+  img.images {
+    transition: 1s;
+  }
+  img.images:hover {
+    transform: scale(1.2);
+  }
+  
+  figure {
+    padding: 10px;
+    display: inline-block;
+    width: 395px;
+    margin: 20px 65px 10px 20px;
+    text-align: center;
+  }
+  
+  .gallery {
+    display: flex;
+    justify-content: center;
+    box-sizing: content-box;
+  }
+  
+  .captionMod {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .modal-content {
+    display: flex;
+    margin: 5% auto;
+    padding: 20px;
+    width: 60%;
+  }
+  
+  @media (min-width: 601px) and (max-width: 1035px) {
+    .div {
+      margin: 0;
+      padding-left: calc(18% - 10px);
+      width: 90%;
+    }
+    .half2 {
+      width: 60%;
+    }
+    .captionMod {
+      color: #fff;
+    }
+    .img img {
+      width: 80%;
+    }
+  }
+  @media all and (max-width: 600px) {
+    .div {
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      align-items: center;
+    }
+    .dropbtn{
+      margin-left: 10%;
+    }
+    .podpic{
+      margin-left: 10%;
+    }
+    .us{
+      margin-top:30%;
+      font-size: 30px;
+      margin-left: 10%;
+    }
+    .Menu{
+      font-size: 35px;
+      margin-top: 5%;
+    }
+    .desserts{
+      font-size: 30px;
+      margin-top: 5%;
+      margin-left: 10%;
+    }
+    .images {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      height: 80%;
+      margin-left: 10%;
+    }
+    .img img {
+      width: 100%;
+    }
+    .captionMod {
+      color: #fff;
+    }
+    .caption {
+      margin-top: calc(1em + 80px);
+    }
+    .modal-content {
+      width: 100%;
+    }
+    img.images {
+      transform: scale(1);
+    }
+    img.images:hover {
+      transform: scale(1.2);
+    }
+  }/*# sourceMappingURL=gallery.css.map */

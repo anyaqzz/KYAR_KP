@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'InkFree';
+	src: url('../fonts/inkfree.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/inkfree.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/inkfree.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/inkfree.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/inkfree.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/inkfree.svg#inkfree') format('svg'); /* Chrome < 4, Legacy iOS */
+}
